@@ -572,7 +572,7 @@ body.locked .music,body.locked .music-tip{display:none}
       <div><b id="s">—</b><small>секунд</small></div>
     </div>
     <div class="cal" style="grid-template-columns:1fr">
-      <a class="btn b1" id="icsBtn" href="#" download="svadba-andrey-nastya.ics" style="font-size:17px;padding:16px">Добавить в календарь</a>
+      <a class="btn b1" id="icsBtn" href="svadba.ics" style="font-size:17px;padding:16px">Добавить в календарь</a>
     </div>
     <p class="note cal-note">подойдёт для любого календаря: iPhone, Android, Яндекс, Outlook. А если удобнее, можно <a id="gcalBtn" href="#" target="_blank" rel="noopener">открыть в Google Календаре</a></p>
 
@@ -751,7 +751,6 @@ body.locked .music,body.locked .music-tip{display:none}
     "SUMMARY:"+esc(title),"LOCATION:"+esc(where),"DESCRIPTION:"+esc(desc),
     "BEGIN:VALARM","TRIGGER:-P7D","ACTION:DISPLAY","DESCRIPTION:Через неделю свадьба Андрея и Насти!","END:VALARM",
     "END:VEVENT","END:VCALENDAR"].join("\r\n");
-  document.getElementById("icsBtn").href="data:text/calendar;charset=utf-8,"+encodeURIComponent(ics);
   document.getElementById("gcalBtn").href="https://calendar.google.com/calendar/render?action=TEMPLATE"
     +"&text="+encodeURIComponent(title)+"&dates=20270612/20270613"
     +"&details="+encodeURIComponent(desc)+"&location="+encodeURIComponent(where);

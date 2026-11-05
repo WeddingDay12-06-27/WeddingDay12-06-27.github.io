@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Andrey-Nastya//Wedding//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:wedding-andrey-nastya-20270612@weddingday12-06-27.github.io
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20270612
+DTEND;VALUE=DATE:20270613
+SUMMARY:Свадьба Андрея и Насти
+LOCATION:Круглое озеро\, Подмосковье
+DESCRIPTION:Ура\, мы женимся! Подробности и обновления: https://weddingday12-06-27.github.io/
+URL:https://weddingday12-06-27.github.io/
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Через неделю свадьба Андрея и Насти!
+END:VALARM
+END:VEVENT
+END:VCALENDAR
